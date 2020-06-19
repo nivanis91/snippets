@@ -1,0 +1,243 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascriptreact,typescriptreact",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Print to console": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "cl",
+		"body": [
+			"console.log('$1');",
+		],
+		"description": "Log output to console"
+	},
+	"Print to console with param": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "cl,",
+		"body": [
+			"console.log('$1', $2);",
+		],
+		"description": "Log output to console with apram"
+	},
+	"Import": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "it",
+		"body": [
+			"import $1 from '$2';",
+		],
+		"description": "Import statement"
+	},	
+	"Import destructured": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "itd",
+		"body": [
+			"import {$1} from '$2';",
+		],
+		"description": "Import statement"
+	},	
+	"Import React": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "itr",
+		"body": [
+			"import React from 'react';",
+		],
+		"description": "Import statement"
+	},	
+	"Return": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "rt",
+		"body": [
+			"return $1;",
+		],
+		"description": "Return"
+	},	
+	"Await": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "aw",
+		"body": [
+			"await ",
+		],
+		"description": "Await"
+	},	
+	"Async": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "as",
+		"body": [
+			"async ",
+		],
+		"description": "Async"
+	},	
+	"Empty function": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "ef",
+		"body": [
+			"// eslint-disable-next-line @typescript-eslint/no-empty-function",
+			"const noop = () => {};"
+		],
+		"description": "noop"
+	},	
+	"Constant": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "cs",
+		"body": [
+			"const $1 = $2;",
+		],
+		"description": "New constant"
+	},	
+	"Constant destructured": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "csd",
+		"body": [
+			"const {$1} = $2;",
+		],
+		"description": "New constant destructured"
+	},
+	"Constant function": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "csf",
+		"body": [
+			"const $1 = ($2): $3 => {",
+			"    $4",
+			"}",
+		],
+		"description": "New constant"
+	},	
+	"Constant function dest": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "csfd",
+		"body": [
+			"const $1 = ({$2}): $3 => {",
+			"    $4",
+			"}",
+		],
+		"description": "New constant"
+	},	
+	"Constant function, quick return": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "csfr",
+		"body": [
+			"const $1 = ($2): $3 => $4"
+		],
+		"description": "New constant"
+	},	
+	"Constant function dest, quick return": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "csfdr",
+		"body": [
+			"const $1 = ({$2}): $3 => $4"
+		],
+		"description": "New constant"
+	},	
+	"Function": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "fn",
+		"body": [
+			"($1): $2 => {",
+			"   $3",
+			"}"
+		],
+		"description": "Function"
+	},	
+	"Function, quick return": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "fnr",
+		"body": [
+			"($1): $2 => {$3}"
+		],
+		"description": "Function"
+	},	
+	"Function dest": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "fnd",
+		"body": [
+			"({$1}): $2 => {",
+			"   $3",
+			"}"
+		],
+		"description": "Function"
+	},	
+	"Function dest, quick return": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "fndr",
+		"body": [
+			"({$1}): $2 => {$3}"
+		],
+		"description": "Function"
+	},	
+	"Describe": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "dsc",
+		"body": [
+			"describe('$1', () => {",
+			"   $2",
+			"}"
+		],
+		"description": "Describe"
+	},	
+	"Test": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "it",
+		"body": [
+			"test('$1', () => {",
+			"   $2",
+			"}"
+		],
+		"description": "Test"
+	},	
+	"Test async": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "ita",
+		"body": [
+			"test('$1', async () => {",
+			"   $2",
+			"}"
+		],
+		"description": "Test async"
+	},	
+	"Export": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "ep",
+		"body": [
+			"export {$1}",
+		],
+		"description": "Export"
+	},
+	"Export default": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "epdef",
+		"body": [
+			"export default $1",
+		],
+		"description": "Export default"
+	},
+	"Export from": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "epf",
+		"body": [
+			"export {$1} from '$2'",
+		],
+		"description": "Export from"
+	},
+	"Type": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "tp",
+		"body": [
+			"type $1 = {",
+			"   $2",
+			"}"
+		],
+		"description": "Type"
+	}	
+}
